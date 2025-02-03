@@ -5,17 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <script>
-        class HelloWorld extends HTMLElement {
-            connectedCallback() {
-                console.log("Hello world!");
-            }
-        }
-        customElements.define("hello-world", HelloWorld);
-    </script>
-    <hello-world></hello-world>
     <style>
         table {
             width: 100%;
@@ -31,6 +20,17 @@
             margin: 10px;
         }
     </style>
+</head>
+<body>
+    <script>
+        class HelloWorld extends HTMLElement {
+            connectedCallback() {
+                console.log("Hello world!");
+            }
+        }
+        customElements.define("hello-world", HelloWorld);
+    </script>
+    <hello-world></hello-world>
     <header>
         <hgroup>
             <h1>Portfolio</h1>
@@ -41,6 +41,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="experimental.html">Experimental</a></li>
             </ul>
         </nav>
     </header>
