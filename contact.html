@@ -17,10 +17,24 @@
     <hello-world></hello-world>
     <header>
         <h1>Contact Me</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <search>
+                <form action="/search">
+                    <label for="search-box">Search:</label>
+                    <input type="text" id="search-box" name="q">
+                    <button type="submit">Search</button>
+                </form>
+            </search>
+        </nav>
     </header>
     <main>
-        <section>
-            <dialog closed>
+        <div>
+            <dialog>
                 <p>Message Sent Successfully!</p>
                 <button>Close</button>
             </dialog>
@@ -38,7 +52,7 @@
                 </fieldset>
                 <button type="submit">Send</button>
             </form>
-        </section>
+        </div>
     </main>
     <footer>
         <p>Follow me on LinkedIn.</p>
