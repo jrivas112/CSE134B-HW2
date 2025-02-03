@@ -16,17 +16,17 @@
         customElements.define("hello-world", HelloWorld);
     </script>
     <hello-world></hello-world>
+    <search>
+        <form action="search.php">
+          <label for="query">Find an article</label>
+          <input id="query" name="q" type="search">
+          <button type="submit">Go!</button>
+        </form>
+      </search>
     <header>
         <hgroup>
             <h1>Experimental</h1>
         </hgroup>
-        <search>
-            <form action="search.php">
-              <label for="query">Find an article</label>
-              <input id="query" name="q" type="search">
-              <button type="submit">Go!</button>
-            </form>
-          </search>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
