@@ -16,26 +16,17 @@
         customElements.define("hello-world", HelloWorld);
     </script>
     <hello-world></hello-world>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-        }
-        aside {
-            background-color: #f4f4f4;
-            padding: 10px;
-            margin: 10px;
-        }
-    </style>
     <header>
         <hgroup>
-            <h1>Portfolio</h1>
-            <h2>Showcasing My Work</h2>
+            <h1>Experimental</h1>
         </hgroup>
+        <search>
+            <form action="search.php">
+              <label for="query">Find an article</label>
+              <input id="query" name="q" type="search">
+              <button type="submit">Go!</button>
+            </form>
+          </search>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -156,15 +147,7 @@
         <span>
             this is a span
         </span>
-        <hr>This is a hr elemnent </hr>
         <aside>Aside</aside>
-        <search>
-            <form action="/search">
-                <label for="search-box">Search:</label>
-                <input type="text" id="search-box" name="q">
-                <button type="submit">Search</button>
-            </form>
-        </search>
     </main>
 
     <footer>
