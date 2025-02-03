@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Portfolio</title>
+    <script>
+        class HelloWorld extends HTMLElement {
+            connectedCallback() {
+                console.log("Hello world!");
+            }
+        }
+        customElements.define("hello-world", HelloWorld);
+    </script>
+    <hello-world></hello-world>
+</head>
+<body>
+    <header>
+        <h1>My Projects</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Projects</h2>
+            <article>
+                <h3>Project 1</h3>
+                <img src="#" alt="Project 1 Thumbnail">
+                <p>Description of Project 1.</p>
+            </article>
+            <article>
+                <h3>Project 2</h3>
+                <img src="#" alt="Project 2 Thumbnail">
+                <p>Description of Project 2.</p>
+            </article>
+            <article>
+                <h3>Project 3</h3>
+                <img src="#" alt="Project 3 Thumbnail">
+                <p>Description of Project 3.</p>
+            </article>
+        </section>
+        <section>
+            <h2>Project In Progress Details</h2>
+            <details>
+                <summary>Project 1: Web App</summary>
+                <p>Description of Project 1.</p>
+            </details>
+            <details>
+                <summary>Project 2: Data Analysis</summary>
+                <p>Description of Project 2.</p>
+            </details>
+            <table>
+                <caption>Project Statistics</caption>
+                <tr>
+                    <th>Project Name</th>
+                    <th>Duration</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>Web App</td>
+                    <td>3 months</td>
+                    <td>Completed</td>
+                </tr>
+                <tr>
+                    <td>Data Analysis</td>
+                    <td>2 months</td>
+                    <td>Ongoing</td>
+                </tr>
+            </table>
+        </section>        
+    </main>
+    <footer>
+        <p>Follow me on:</p>
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+    </footer>
+</body>
+</html>

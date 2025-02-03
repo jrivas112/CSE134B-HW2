@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        class HelloWorld extends HTMLElement {
+            connectedCallback() {
+                console.log("Hello world!");
+            }
+        }
+        customElements.define("hello-world", HelloWorld);
+    </script>
+    <hello-world></hello-world>
+    <style>
+        .highlight {
+            color: blue;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        aside {
+            background-color: #f4f4f4;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <hgroup>
+            <h1>Portfolio</h1>
+            <h2>Showcasing My Work</h2>
+        </hgroup>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <search>
+                <form action="/search">
+                    <label for="search-box">Search:</label>
+                    <input type="text" id="search-box" name="q">
+                    <button type="submit">Search</button>
+                </form>
+            </search>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Welcome to My Portfolio</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula auctor metus, eu aliquet est vulputate et.</p>
+        </section>
+        
+        <aside>
+            <h3>Quick Links</h3>
+            <p>Check out my latest projects and blog posts.</p>
+        </aside>
+
+        <section>
+            <h3>About Me</h3>
+            <p>Hi, I'm <abbr title="Software Engineer">SWE</abbr> with a passion for creating impactful projects.</p>
+            <blockquote>
+                “Code is like humor. When you have to explain it, it’s bad.”
+                <cite> – Cory House</cite>
+            </blockquote>
+        </section>
+
+        <section>
+            <h3>Featured Projects</h3>
+            <ul>
+                <li><img src="#" alt="Project Thumbnail 1"><p>Project 1</p></li>
+                <li><img src="#" alt="Project Thumbnail 2"><p>Project 2</p></li>
+                <li><img src="#" alt="Project Thumbnail 3"><p>Project 3</p></li>
+            </ul>
+        </section>
+
+        <h1>Experimental Section</h1>
+
+        <section>
+            <h2>Text Formatting</h2>
+            <p>
+                This text includes <b>bold</b>, <i>italic</i>, <strong>important</strong>, and <em>emphasized</em> styles.
+                Here's an example of inline <code>console.log('Hello World');</code>.
+            </p>
+            <pre>
+                // Preformatted code block
+                function sayHello() {
+                    console.log("Hello, World!");
+                }
+            </pre>
+            <hr>
+        </section>
+
+        <section>
+            <h2>Lists and Tables</h2>
+            <dl>
+                <dt>HTML</dt>
+                <dd>HyperText Markup Language</dd>
+                <dt>CSS</dt>
+                <dd>Cascading Style Sheets</dd>
+            </dl>
+
+            <table>
+                <caption>Example Table</caption>
+                <colgroup>
+                    <col style="background-color: lightblue;">
+                    <col style="background-color: lightgreen;">
+                </colgroup>
+                <tr>
+                    <th>Column 1</th>
+                    <th>Column 2</th>
+                </tr>
+                <tr>
+                    <td>Row 1 Data 1</td>
+                    <td>Row 1 Data 2</td>
+                </tr>
+                <tr>
+                    <td>Row 2 Data 1</td>
+                    <td>Row 2 Data 2</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Media Elements</h2>
+            <figure>
+                <picture>
+                    <source srcset="image.webp" type="image/webp">
+                    <source srcset="image.jpg" type="image/jpeg">
+                    <img src="image.jpg" alt="Example Image">
+                </picture>
+                <figcaption>A responsive image using the <code>&lt;picture&gt;</code> element.</figcaption>
+            </figure>
+
+            <iframe src="https://example.com" width="300" height="200" title="Example Iframe"></iframe>
+            <p>Embedded content via <code>&lt;iframe&gt;</code>.</p>
+
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                <source src="audio.ogg" type="audio/ogg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <video controls width="400">
+                <source src="video.mp4" type="video/mp4">
+                <source src="video.ogg" type="video/ogg">
+                Your browser does not support the video element.
+            </video>
+
+            <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+            <p>A placeholder canvas element for drawing or animations.</p>
+
+            <svg width="100" height="100">
+                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red"></circle>
+            </svg>
+            <p>An example of a simple SVG graphic.</p>
+        </section>
+
+        <section>
+            <h2>Templates and Fallbacks</h2>
+            <template id="project-template">
+                <div>
+                    <h3>Template Project</h3>
+                    <p>This project is generated from a template.</p>
+                </div>
+            </template>
+
+            <noscript>
+                <p>Your browser does not support JavaScript or it is disabled.</p>
+            </noscript>
+        </section>
+
+        <section>
+            <h2>Other Elements</h2>
+            <address>
+                Contact me at <a href="mailto:example@domain.com">example@domain.com</a><br>
+                123 Developer Lane, Code City, Programmingland.
+            </address>
+        </section>
+        <div>
+            This a div
+        </div>
+        <span>
+            this is a span
+        </span>
+        <hr>This is a hr elemnent </hr>
+        <aside>Aside</aside>
+    </main>
+
+    <footer>
+        <p>Follow me on:</p>
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+    </footer>
+</body>
+</html>
